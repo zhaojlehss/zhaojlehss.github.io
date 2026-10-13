@@ -1,0 +1,105 @@
+:root {
+  --ink: #162028;
+  --muted: #5c6a72;
+  --label: #1b4654;
+  --rule: #d5dee2;
+  --page: #e7eef0;
+  --sheet: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: Georgia, "Palatino Linotype", Palatino, serif;
+  font-size: 1.08rem;
+  line-height: 1.58;
+}
+
+.sheet {
+  max-width: 46rem;
+  margin: 2rem auto 3rem;
+  padding: 2.5rem 2.8rem 2.9rem;
+  background: var(--sheet);
+  border-top: 6px solid var(--label);
+}
+
+.conference,
+.abstract-id {
+  margin: 0;
+  color: var(--label);
+  font-family: "Segoe UI", Candara, "Trebuchet MS", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.abstract-id {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+h1 {
+  margin: 0.85rem 0 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.28;
+}
+
+.author {
+  margin: 0.85rem 0 0;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+section {
+  margin-top: 1.35rem;
+}
+
+h2 {
+  margin: 0 0 0.35rem;
+  color: var(--label);
+  font-family: "Segoe UI", Candara, "Trebuchet MS", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+section p {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 1.02rem;
+  }
+
+  .sheet {
+    margin: 0;
+    padding: 1.5rem 1.15rem 2rem;
+  }
+
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .sheet {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+}
